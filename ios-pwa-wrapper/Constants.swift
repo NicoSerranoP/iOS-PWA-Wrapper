@@ -9,13 +9,12 @@
 import UIKit
 
 // Basic App-/WebView-configuration
-let appTitle = "iOS PWA Wrapper"
-let webAppUrl = URL(string: "https://www.leasingrechnen.at")
-let allowedOrigin = "leasingrechnen.at"
-let menuButtonTitle = NSLocalizedString("menu", comment: "")
-let menuButtonJavascript = """
-    $('.button-collapse').sideNav('show');
-"""
+let appTitle = "Maipi"
+let webAppUrl = URL(string: "https://maipi.ec")
+let allowedOrigin = "maipi.ec"
+let menuButtonTitle = NSLocalizedString("", comment: "")
+let menuButtonJavascript = ""
+
 let useUserAgentPostfix = true
 let userAgentPostfix = "iOSApp"
 let useCustomUserAgent = false
@@ -30,17 +29,13 @@ let enableBounceWhenScrolling = true
 // IMPORTANT: do not enable this yet, it's still buggy
 let changeMenuButtonOnWideScreens = false
 let wideScreenMinWidth = CGFloat(993) // your CSS Media Query px-breakpoint
-let alternateRightButtonTitle = NSLocalizedString("share", comment: "")
-let alternateRightButtonJavascript = """
-    $('#share-link').click();
-"""
 
 // Colors & Styles
 let useLightStatusBarStyle = true
-let navigationBarColor = getColorFromHex(hex: 0xF44336, alpha: 1.0)
+let navigationBarColor = getColorFromHex(hex: 0xC1214B, alpha: 1.0)
 let navigationTitleColor = getColorFromHex(hex: 0xFFFFFF, alpha: 1.0)
 let navigationButtonColor = navigationTitleColor
-let progressBarColor = getColorFromHex(hex: 0x4CAF50, alpha: 1.0)
+let progressBarColor = getColorFromHex(hex: 0xDE1E3F, alpha: 1.0)
 let offlineIconColor = UIColor.darkGray
 let buttonColor = navigationBarColor
 let activityIndicatorColor = navigationBarColor
@@ -54,3 +49,4 @@ func getColorFromHex(hex: UInt, alpha: CGFloat) -> UIColor {
         alpha: CGFloat(alpha)
     )
 }
+
