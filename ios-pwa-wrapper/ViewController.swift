@@ -139,12 +139,21 @@ class ViewController: UIViewController {
             self.navigationController?.navigationBar.barStyle = UIBarStyle.black
         }
         
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        let statusBarView = UIView(frame: UIApplication.shared.statusBarFrame)
+        statusBarView.backgroundColor = navigationBarColor
+        view.addSubview(statusBarView)
+        
         // handle menu button changes
         /*
         // @DEBUG: test offline view
         offlineView.isHidden = false
         webViewContainer.isHidden = true
         */
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+       return .lightContent
     }
 
     // load startpage
