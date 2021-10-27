@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     var webView: WKWebView!
     var tempView: WKWebView!
     var progressBar : UIProgressView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -223,7 +223,16 @@ extension ViewController: WKUIDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if let requestUrl = navigationAction.request.url {
             if let requestHost = requestUrl.host {
-                if (requestHost.range(of: allowedOrigin) != nil ) {
+//                if (requestHost.range(of: allowedOrigin) != nil ) {
+                var openInWrapper = false
+                for allowedOrigin in allowedOrigins  {
+                    if (requestHost.range(of: allowedOrigin) != nil) {
+                        openInWrapper = true
+                        break
+                    }
+                }
+                // open link
+                if (openInWrapper) {
                     decisionHandler(.allow)
                 } else {
                     decisionHandler(.cancel)

@@ -11,7 +11,15 @@ import UIKit
 // Basic App-/WebView-configuration
 let appTitle = ""
 let webAppUrl = URL(string: "https://maipi.ec")
-let allowedOrigin = "maipi.ec"
+//let allowedOrigin = "maipi.ec"
+let allowedOrigins = [
+    "maipi.ec",
+    "accounts.google.com",
+    "accounts.youtube.com",
+    "facebook.com",
+    "appleid.apple.com"
+    
+]
 let menuButtonTitle = NSLocalizedString("", comment: "")
 let menuButtonJavascript = ""
 
@@ -49,4 +57,3 @@ func getColorFromHex(hex: UInt, alpha: CGFloat) -> UIColor {
         alpha: CGFloat(alpha)
     )
 }
-
