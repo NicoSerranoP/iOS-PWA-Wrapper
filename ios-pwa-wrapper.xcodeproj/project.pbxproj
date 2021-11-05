@@ -456,7 +456,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ios-pwa-wrapper/ios-pwa-wrapper.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = DL48JHDYKG;
 				INFOPLIST_FILE = "ios-pwa-wrapper/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -477,7 +477,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ios-pwa-wrapper/ios-pwa-wrapper.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = DL48JHDYKG;
 				INFOPLIST_FILE = "ios-pwa-wrapper/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
