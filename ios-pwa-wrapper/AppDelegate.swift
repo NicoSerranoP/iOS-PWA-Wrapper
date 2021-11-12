@@ -24,6 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if #available(iOS 11.0, *) {
             UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: navigationTitleColor]
         }
+        
+        let dictionary = NSDictionary(object: customUserAgent, forKey: "UserAgent" as NSCopying)
+        UserDefaults.standard.register(defaults: dictionary as! [String : Any])
 
         return true
     }

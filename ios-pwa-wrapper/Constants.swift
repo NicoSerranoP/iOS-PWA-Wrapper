@@ -25,8 +25,9 @@ let menuButtonJavascript = ""
 
 let useUserAgentPostfix = true
 let userAgentPostfix = "iOSApp"
-let useCustomUserAgent = true
+let useCustomUserAgent = false
 let customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/36.0  Mobile/15E148 Safari/605.1.15"
+// "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"
 
 // UI Settings
 let changeAppTitleToPageTitle = false
