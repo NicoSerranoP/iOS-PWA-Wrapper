@@ -24,9 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if #available(iOS 11.0, *) {
             UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: navigationTitleColor]
         }
-        let userAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/36.0  Mobile/15E148 Safari/605.1.15"
-        let dictionary = NSDictionary(object: userAgent, forKey: "UserAgent" as NSCopying)
-        UserDefaults.standard.register(defaults: dictionary as! [String : Any])
+//        let userAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/36.0  Mobile/15E148 Safari/605.1.15"
+//        let dictionary = NSDictionary(object: userAgent, forKey: "UserAgent" as NSCopying)
+//        UserDefaults.standard.register(defaults: dictionary as! [String : Any])
 
         return true
     }
