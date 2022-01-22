@@ -11,6 +11,7 @@ import UIKit
 // Basic App-/WebView-configuration
 let appTitle = ""
 let webAppUrl = URL(string: "https://maipi.ec")
+var webAppUrlOld = URL(string: "")
 //let allowedOrigin = "maipi.ec"
 let allowedOrigins = [
     "maipi.ec",
@@ -18,7 +19,6 @@ let allowedOrigins = [
     "accounts.youtube.com",
     "facebook.com",
     "appleid.apple.com"
-    
 ]
 let menuButtonTitle = NSLocalizedString("", comment: "")
 let menuButtonJavascript = ""

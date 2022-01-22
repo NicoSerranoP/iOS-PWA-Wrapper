@@ -9,6 +9,10 @@
 import UIKit
 import WebKit
 
+extension Notification.Name {
+    static let FromWeb = Notification.Name("FromWeb")
+}
+
 class ViewController: UIViewController {
     
     // MARK: Outlets
@@ -29,6 +33,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.title = appTitle
         setupApp()
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.loadAppUrl), name: .FromWeb, object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,6 +67,13 @@ class ViewController: UIViewController {
         if (keyPath == #keyPath(WKWebView.estimatedProgress)) {
             progressBar.progress = Float(webView.estimatedProgress)
         }
+    }
+    
+    // Initialize App and start loading
+    func setupApp() {
+        setupWebView()
+        setupUI()
+        loadAppUrl()
     }
     
     // Initialize WKWebView
@@ -157,16 +169,12 @@ class ViewController: UIViewController {
     }
 
     // load startpage
-    func loadAppUrl() {
-        let urlRequest = URLRequest(url: webAppUrl!)
+    @objc func loadAppUrl() {
+        var urlRequest = URLRequest(url: webAppUrl!)
+        if(webAppUrlOld != nil){
+            urlRequest = URLRequest(url: webAppUrlOld!)
+        }
         webView.load(urlRequest)
-    }
-    
-    // Initialize App and start loading
-    func setupApp() {
-        setupWebView()
-        setupUI()
-        loadAppUrl()
     }
     
     // Cleanup

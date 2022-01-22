@@ -14,8 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
         // Override point for customization after application launch.
+        if userActivity.activityType == NSUserActivityTypeBrowsingWeb {
+            let url = userActivity.webpageURL!
+            webAppUrlOld = URL(string: url.absoluteString)
+            NotificationCenter.default.post(name: .FromWeb, object: nil)
+        }
         
         // Change Navigation style
         UINavigationBar.appearance().barTintColor = navigationBarColor
