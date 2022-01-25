@@ -37,6 +37,9 @@
 
 /* Begin PBXFileReference section */
 		015237A6270E336B00BDB1CE /* ios-pwa-wrapper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ios-pwa-wrapper.entitlements"; sourceTree = "<group>"; };
+		015D8A3A279F72A10063D367 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Main.strings"; sourceTree = "<group>"; };
+		015D8A3B279F72A10063D367 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		015D8A3C279F72A10063D367 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		2D504BEB1FA100E20019B279 /* ios-pwa-wrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-pwa-wrapper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D504BEE1FA100E20019B279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D504BF01FA100E20019B279 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,8 +55,6 @@
 		2D504C131FA100E20019B279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D64358A1FA62B5800ECC5D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		2D6EEE571FCB2FCB0054837D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2D6EEE591FCB2FCD0054837D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2D9480D21FA8B96000ED0A97 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		2DC96ADD1FA5DD32006B5881 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,7 +226,7 @@
 			knownRegions = (
 				en,
 				Base,
-				de,
+				"es-419",
 			);
 			mainGroup = 2D504BE21FA100E20019B279;
 			productRefGroup = 2D504BEC1FA100E20019B279 /* Products */;
@@ -315,7 +316,7 @@
 			children = (
 				2D504BF31FA100E20019B279 /* Base */,
 				2D64358A1FA62B5800ECC5D2 /* en */,
-				2D9480D21FA8B96000ED0A97 /* de */,
+				015D8A3A279F72A10063D367 /* es-419 */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -324,6 +325,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2D504BFB1FA100E20019B279 /* Base */,
+				015D8A3B279F72A10063D367 /* es-419 */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -332,7 +334,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2D6EEE571FCB2FCB0054837D /* en */,
-				2D6EEE591FCB2FCD0054837D /* de */,
+				015D8A3C279F72A10063D367 /* es-419 */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -461,7 +463,7 @@
 				INFOPLIST_FILE = "ios-pwa-wrapper/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = ec.maipi.twa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -482,7 +484,7 @@
 				INFOPLIST_FILE = "ios-pwa-wrapper/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = ec.maipi.twa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
